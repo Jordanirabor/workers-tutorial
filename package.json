@@ -1,0 +1,19 @@
+{
+  "name": "workers-tutorial",
+  "version": "1.0.0",
+  "description": "A project to illustrate the use of worker threads in a web crawler",
+  "main": "src/app.js",
+  "author": "Jordan Irabor",
+  "license": "MIT",
+  "scripts": {
+    "start:pm": "pm2 start src/app.js",
+    "stop:pm": "pm2 stop src/app.js",
+    "monit": "pm2 monit",
+    "start": "node src/app.js"
+  },
+  "dependencies": {
+    "axios": "^0.19.0",
+    "cheerio": "^1.0.0-rc.3",
+    "firebase-admin": "^8.2.0"
+  }
+}
